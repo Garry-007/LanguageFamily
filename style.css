@@ -112,7 +112,7 @@ button:hover {
      }
     button{
         font-size: calc(1em + 2vw);
-        width: calc(5em + 7vw);
+        width: calc(5em + 12vw);
     }
     #quiz_wrapper {
         width: 60%;
