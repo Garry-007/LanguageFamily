@@ -1,0 +1,120 @@
+@font-face {
+    font-family: Boogaloo;
+    src: url(Boogaloo-Regular.ttf);
+}
+@font-face {
+    font-family: ArimaMadurai-Regular;
+    src: url(ArimaMadurai-Regular.ttf);
+}
+@font-face {
+    font-family: ArimaMadurai-Bold;
+    src: url(ArimaMadurai-Bold.ttf);
+}
+body {
+    font-family: Boogaloo, monospace;
+    font-size: calc(1em + 1.3vw);
+    background-color: #10454F;
+    color: #BDE038;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#question {
+    font-family: ArimaMadurai-Bold, monospace;
+    font-size: 80px;
+    color: #9FD8DF;
+    width: 600px;
+}
+#score {
+    font-family: ArimaMadurai-Bold, monospace;
+    font-size: 80px;
+    color: #9FD8DF;
+}
+#answers_wrapper {
+    flex-direction: column;
+}
+#quiz_wrapper {
+    background-color: #818274;
+    border-radius: 50px;
+    padding: 0 50px 0 50px;
+    width: 600px;
+}
+button {
+    font-family: monospace;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 12px 24px;
+    border: 0;
+    color: #FAFDD6;
+    background: #5E454B;
+    font-size: 40px;
+    width: 300px;
+    margin: auto;
+}
+button:hover {
+    transition: all .1s ease;
+    box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
+}
+#start {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#start_button, #repeat_wrong {
+    color: #BDE038;
+    background: #186776;
+    border-radius: 25px;
+    font-size: 1.8em;
+    margin: 10px;
+}
+#repeat_wrong {
+    color: #BDE038;
+    background: #186776;
+}
+#next_button {
+    color: #BDE038;
+    background: #186776;
+    border-radius: 25px;
+    font-size: 1em;
+    width: 150px;
+}
+#next_button {
+    color: #186776;
+    background: #BDE038;
+    border-radius: 25px;
+    font-size: 1em;
+    width: 150px;
+}
+.hidden {
+    display: none;
+}
+.bad {
+    background-color: red;
+}
+.good {
+    background-color: green;
+}
+@media only screen and (max-width: 712px) {
+    /* For mobile phones: */
+    body {
+        font-size: calc(1em + 2vw);
+    }
+    #question, #score {
+        font-size: calc(1em + 7vw);
+        width: auto;
+     }
+    button{
+        font-size: calc(1em + 2vw);
+        width: calc(5em + 4vw);
+    }
+    #quiz_wrapper {
+        width: 60%;
+    }
+}
